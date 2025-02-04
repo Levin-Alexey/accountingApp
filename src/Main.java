@@ -25,13 +25,13 @@ public class Main {
                 switch (operation) {
                     case 1:
                         System.out.println("Введите сумму дохода: ");
-                        String moneyEarningsStr = scanner.nextLine(); // Не используйте тут nextInt (!)
+                        String moneyEarningsStr = scanner.nextLine();
                         int moneyEarnings = Integer.parseInt(moneyEarningsStr);
                         earnings += moneyEarnings;
                         break;
                     case 2:
                         System.out.println("Введите сумму расхода: ");
-                        String moneySpendingsStr = scanner.nextLine(); // Не используйте тут nextInt (!)
+                        String moneySpendingsStr = scanner.nextLine();
                         int moneySpendings = Integer.parseInt(moneySpendingsStr);
                         spendings += moneySpendings;
                         break;
