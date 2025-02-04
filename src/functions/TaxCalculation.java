@@ -18,7 +18,7 @@ public class TaxCalculation {
             System.out.println("Налог на другой системе: " + incomeTax6Percent + " рублей");
             System.out.println("Экономия: " + (incomeTax6Percent - earningsMinusSpendings) + " рублей");
         } else if (earningsMinusSpendings > incomeTax6Percent) {
-            System.out.println("Мы советуем Вам - УСН");
+            System.out.println("Мы советуем Вам - УСН 6% от дохода");
             System.out.println("Ваш налог составит: " + incomeTax6Percent + " рублей");
             System.out.println("Налог на другой системе: " + earningsMinusSpendings + " рублей");
             System.out.println("Экономия: " + (earningsMinusSpendings - incomeTax6Percent) + " рублей");
