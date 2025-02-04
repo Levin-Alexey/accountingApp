@@ -19,7 +19,7 @@ public class Main {
             String input = scanner.nextLine();
             if ("end".equals(input)) {
                 break;
-            } else if (input.matches("\\d+")) {
+            } else {
                 int operation = Integer.parseInt(input);
 
                 switch (operation) {
@@ -36,15 +36,13 @@ public class Main {
                         spendings += moneySpendings;
                         break;
                     case 3:
-                        int earningsMinusSpendings =  TaxCalculation.getTaxEarningsMinusSpendings(earnings, spendings);
+                        int earningsMinusSpendings = TaxCalculation.getTaxEarningsMinusSpendings(earnings, spendings);
                         int incomeTax6Percent = TaxCalculation.getIncomeTax6Percent(earnings);
                         TaxCalculation.showTaxRecommendation(earningsMinusSpendings, incomeTax6Percent);
                         break;
                     default:
                         System.out.println("Такой операции нет");
                 }
-            } else {
-                System.out.println("Введите пожалуста сумму дохода или расхода. Для выхода введите end");
             }
         }
         System.out.println("Программа завершена!");
